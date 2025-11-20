@@ -16,7 +16,12 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
+from user.views import index, login,register
 
 urlpatterns = [
     path('admin/', admin.site.urls),
+    # 前面是配置的路径，后面是调用的视图函数
+    path('index/', index),
+    path('login/', login),
+    path('register/', register),
 ]

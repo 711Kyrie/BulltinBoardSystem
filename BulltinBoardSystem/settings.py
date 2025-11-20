@@ -38,6 +38,10 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'bulltin_board_system.apps.BulltinBoardSystemConfig',
+    'user.apps.UserConfig',
+    'backend.apps.BackendConfig',
+    'article.apps.ArticleConfig',
+    'blog.apps.BlogConfig'
 ]
 
 MIDDLEWARE = [
@@ -124,7 +128,7 @@ USE_TZ = True
 # 静态文件资源系统
 STATIC_URL = 'static/'
 # 配置静态资源文件位置
- STATICFILES_DIRS = ['static']
+STATICFILES_DIRS = ['static']
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
     
